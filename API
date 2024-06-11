@@ -1,0 +1,8 @@
+export const fetchAddressByCEP = async (cep) => {
+  // Simulação de uma chamada à API
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve('Rua Exemplo, 123, Bairro Exemplo, Cidade Exemplo, Estado Exemplo');
+    }, 1000);
+  });
+};

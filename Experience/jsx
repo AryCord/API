@@ -1,0 +1,14 @@
+import React from 'react';
+
+const Experience = ({ experience }) => (
+  <div>
+    <h2>Experiência</h2>
+    <ul>
+      {experience.map((exp, index) => (
+        <li key={index}>{exp}</li>
+      ))}
+    </ul>
+  </div>
+);
+
+export default Experience;

@@ -1,0 +1,17 @@
+import React from 'react';
+import Hobbies from '../components/Hobbies';
+
+const hobbiesData = [
+  'Leitura',
+  'Corrida',
+  'Cozinhar',
+];
+
+const HobbiesPage = () => (
+  <div>
+    <h1>Meus Hobbies</h1>
+    <Hobbies hobbies={hobbiesData} />
+  </div>
+);
+
+export default HobbiesPage;

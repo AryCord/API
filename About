@@ -1,0 +1,15 @@
+import React from 'react';
+import Address from '../components/Address';
+
+const About = () => {
+  const cep = '12345678'; // Substitua pelo seu CEP
+
+  return (
+    <div>
+      <h1>Sobre Mim</h1>
+      <Address cep={cep} />
+    </div>
+  );
+};
+
+export default About;

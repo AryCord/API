@@ -1,0 +1,14 @@
+import React from 'react';
+
+const Education = ({ education }) => (
+  <div>
+    <h2>Formação</h2>
+    <ul>
+      {education.map((edu, index) => (
+        <li key={index}>{edu}</li>
+      ))}
+    </ul>
+  </div>
+);
+
+export default Education;

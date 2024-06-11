@@ -1,0 +1,17 @@
+import React from 'react';
+import Education from '../components/Education';
+
+const educationData = [
+  'Graduação em Ciência da Computação - Universidade X',
+  'Mestrado em Engenharia de Software - Universidade Y',
+];
+
+const EducationPage = () => (
+  <div>
+    <h1>Minha Formação</h1>
+    <Education education={educationData} />
+  </div>
+);
+
+export default EducationPage;
+

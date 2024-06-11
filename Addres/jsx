@@ -1,0 +1,25 @@
+import React, { useState } from 'react';
+import Button from './Button';
+import { fetchAddressByCEP } from '../api';
+
+const Address = ({ cep }) => {
+  const [address, setAddress] = useState(null);
+
+  const handleButtonClick = async () => {
+    const fetchedAddress = await fetchAddressByCEP(cep);
+    setAddress(fetchedAddress);
+  };
+
+  return (
+    <div>
+      <p>CEP: {cep}</p>
+      {address ? (
+        <p>Endereço: {address}</p>
+      ) : (
+        <Button onClick={handleButtonClick}>Mostrar Endereço Completo</Button>
+      )}
+    </div>
+  );
+};
+
+export default Address;
